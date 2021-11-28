@@ -1,0 +1,44 @@
+/*Seleccionamos toda la pagina y le quitamos el margin y padding que traen por defecto los navegadores*/
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+
+/*Llamamos a la etiqueda header del HTML*/
+
+header{
+    width: 100%; /*Ocupara el largo de la pantalla*/
+    height: 600px;/*Ocupara 600px de ancho en la pantalla*/
+    background: url(back.png);/*Seleccionamos una imagen para el fondo del header*/
+    background-size: cover;/*Como la imagen es chica, utilizaremos esta etiqueta para decirle que cobra todo el largo de la pantalla*/
+    background-attachment: fixed;/*Con esto haremos que el fondo sea estatico y de un efecto a la hora de hacer scroll*/
+}
+
+/*Llamamos a la etiqueda NAV del html*/
+
+nav{
+    text-align: right; /*Seleccionamos el texto y le decimos que lo queremos del lado derecho*/
+    padding: 30px 50px 0 0; /*Seleccionaremos el padding que le queremos dar al menu*/
+}
+/*Llamamos a los enlaces que estan dentro del NAV*/
+nav a{
+color: white; /*Le daremos un color blanco a las letras*/
+text-decoration: none;/*Le sacaremos el color y linea azul a los links*/
+margin-right: 16px;/*Del lado derecho los enlaces tendras una separacion de 16px*/
+}
+
+nav a:hover{
+    text-decoration: underline;/*Con esto haremos que cuando pasemos el mause sobre los links a estos les saldra una pequeña linea blanca abajo*/
+}
+
+/*Efecto de ola debajo del header*/
+/*En el HTML esta el codigo de la ola el cual contiene una clase "wave" por eso lo llamamos con un punto*/
+/*En caso de no querer el efecto solo tienen que borrar el wave del css y html y listo.*/
+.wave{
+    position: absolute;/*indicamos que la posicion de la ola sera absoluta y se movera con valores como right, left, bottom*/
+    bottom: 0;/*le indicaremos la distancia en la que se encontrara del borde inferior del elemento y el borde inferior de su bloque contenedor*/
+    width: 100%;/*le diremos que tiene que ocupar el 100% del largo de la pantalla*/
+    stroke: none; fill: white;/*indicaremos el color de la ola, en este caso blanco, se puede usar rgb, rgba o los codigos ejemplo #fff para el blanco*/
+    
+}
